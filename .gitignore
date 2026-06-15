@@ -1,0 +1,18 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Model weights (auto-downloaded on first run)
+*.pt
+
+# Input videos (public — download via the URL in the README, not committed)
+/basketball.mp4
+/market-square.mp4
+input_video.mp4
+
+# Keep output/ deliverables committed (annotated video, heatmap, screenshots, etc.)
+# but ignore any oversized raw 4K renders if regenerated
+output/annotated_output_4k.mp4
+output/*_1080p.mp4
+</content>
