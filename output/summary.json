@@ -228,7 +228,7 @@
     474
   ],
   "video_duration_sec": 7.9,
-  "processing_time_sec": 296.57,
+  "processing_time_sec": 292.58,
   "fps_processing": 1.6,
   "output_video": "output\\annotated_output.mp4",
   "model": "yolov8n.pt",
