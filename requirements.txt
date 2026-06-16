@@ -1,6 +1,14 @@
+# Pinned for reproducible, conflict-free installs on a fresh machine or Spaces.
 ultralytics>=8.0.0
 lap>=0.5.12
 supervision>=0.18.0
-opencv-python>=4.8.0
-numpy>=1.24.0
+# Headless OpenCV: no GUI deps. NOTE: ultralytics also pulls in regular
+# opencv-python, which needs libGL at import time — that's why packages.txt
+# installs libgl1. Both together import fine.
+opencv-python-headless>=4.8.0
+# numpy is pinned below 2.0; some of the CV stack still trips on numpy 2.x.
+numpy>=1.26.0,<2.0.0
 yt-dlp>=2024.1.0
+streamlit>=1.32.0
+# Bundled static ffmpeg so the web app can re-encode video to browser H.264.
+imageio-ffmpeg>=0.4.9

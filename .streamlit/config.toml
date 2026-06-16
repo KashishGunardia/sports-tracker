@@ -1,0 +1,11 @@
+# Streamlit server settings, used locally and on Hugging Face Spaces.
+[server]
+headless = true
+maxUploadSize = 300
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
+primaryColor = "#1e90ff"
